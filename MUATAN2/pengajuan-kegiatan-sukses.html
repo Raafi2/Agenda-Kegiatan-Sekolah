@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Berhasil!</title>
+    
+    <style>
+        body {
+            background-image: url('login.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 450px; 
+            padding: 40px; 
+            background-color: white;
+            border-radius: 40px; 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); 
+            text-align: center;
+        }
+        
+        .success-icon {
+            color: #38c172; 
+            font-size: 5em; 
+            margin-bottom: 15px;
+            line-height: 0.8;
+        }
+        
+        .main-title {
+            color: #495057;
+            font-size: 1.8em; 
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            color: #6c757d;
+            font-size: 1.1em; 
+            margin-bottom: 30px;
+        }
+
+        .btn-kembali {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em; 
+            font-weight: bold;
+            padding: 12px 40px; 
+            border-radius: 50px; 
+            transition: all 0.2s;
+            background-color: #00BCD4; 
+            border: 3px solid #799DE3;
+            box-shadow: 0 5px 0px rgba(0, 0, 0, 0.25); 
+        }
+
+        .btn-kembali:hover {
+            transform: translateY(-3px); 
+            background-color: #00A8C2;
+            box-shadow: 0 8px 0px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="success-icon">✅</div>
+        <h1 class="main-title">PENGAJUAN BERHASIL!</h1>
+        <p class="message">Kegiatan Anda telah berhasil dikirim dan menunggu persetujuan Guru.</p>
+        
+        <a href="dashboard-panitia.php" class="btn-kembali">KEMBALI</a>
+    </div>
+</body>
+</html>

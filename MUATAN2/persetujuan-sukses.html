@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksi Berhasil!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 50%, #80DEEA 100%);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px; 
+            padding: 50px 40px; 
+            background-color: white;
+            border-radius: 30px; 
+            box-shadow: 0 20px 60px rgba(0, 188, 212, 0.3);
+            text-align: center;
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #00BCD4, #0097A7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 15px 40px rgba(0, 188, 212, 0.5);
+            }
+        }
+
+        .success-icon i {
+            color: white;
+            font-size: 3.5em;
+        }
+
+        .checkmark {
+            font-size: 3.5em;
+            color: white;
+        }
+        
+        .main-title {
+            color: #00BCD4;
+            font-size: 2.2em; 
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .message {
+            color: #6b7280;
+            font-size: 1.15em; 
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .btn-kembali {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em; 
+            font-weight: 700;
+            padding: 16px 50px; 
+            border-radius: 30px; 
+            transition: all 0.3s;
+            background: linear-gradient(135deg, #00BCD4, #0097A7);
+            box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
+        }
+
+        .btn-kembali:hover {
+            transform: translateY(-3px); 
+            box-shadow: 0 12px 30px rgba(0, 188, 212, 0.4);
+        }
+
+        .btn-kembali:active {
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 600px) {
+            .main-container {
+                width: 90%;
+                padding: 40px 30px;
+            }
+            .main-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="success-icon">
+            <span class="checkmark">✓</span>
+        </div>
+        <h1 class="main-title">BERHASIL!</h1>
+        <p class="message">Status kegiatan telah berhasil diperbarui.</p>
+        
+        <a href="dashboard-guru.php" class="btn-kembali">
+            <i class="fas fa-home"></i> KEMBALI KE DASHBOARD
+        </a>
+    </div>
+</body>
+</html>
